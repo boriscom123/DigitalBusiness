@@ -139,6 +139,13 @@
         </div>
       </form>
     </div>
+    <div class="">
+      <h2>Библиотека AMO API</h2>
+      <?php
+        $apiClient = new \AmoCRM\Client\AmoCRMApiClient($clientId, $clientSecret, $redirectUri);
+        print_r($apiClient);
+      ?>
+    </div>
     <div class="" id="contacts">
       <?php // Выводим контакты
       if(file_exists('amointegrationapi.json')) {
